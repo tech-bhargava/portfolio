@@ -20,27 +20,27 @@ export const projectsData = [
     },
     {
         id : 4,
-        title : 'name',
+        title : 'Projectname',
         img : '/projects/twd.png'
     },
     {
         id : 5,
-        title : 'name',
+        title : 'Projectname',
         img : '/projects/twd.png'
     },
     {
         id : 6,
-        title : 'name',
+        title : 'Projectname',
         img : '/projects/twd.png'
     },
     {
         id : 7,
-        title : 'name',
+        title : 'Projectname',
         img : '/projects/twd.png'
     },
     {
         id : 8,
-        title : 'name',
+        title : 'Projectname',
         img : '/projects/twd.png'
     }
 ] 
