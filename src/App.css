@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body{
+  overflow-x: hidden;
+}
 [data-aos^=fade][data-aos^=fade].aos-animate{
   padding-left: 0;
 }
@@ -228,7 +231,7 @@ a{
 }
 .about_content h1{
   display: inline-block;
-  line-height: 2;
+  /* line-height: 2; */
 }
 .about_name{
   color:#3195ff;
@@ -261,10 +264,25 @@ a{
   padding: 10px 15px;
   font-size: 18px;
 }
+.resume{
+  margin-bottom: 5px;
+  color: #3195ff;
+  font-size: 22px;
+}
 .phone{
   margin-bottom: 6px;
   color: #00FF00;
   font-size: 20px;
+}
+.email{
+  margin-bottom: 5px;
+  color: #c71610;
+  font-size: 22px;
+}
+.resume_btn_bg:hover .email,
+.resume_btn_bg:hover  .phone,
+.resume_btn_bg:hover  .resume{
+  color: #fff;
 }
 /* SKILLS */
 .sec_03{
@@ -409,10 +427,12 @@ input[type='submit']{
   font-weight: bold;
   letter-spacing: 1px;
   transition: 0.5s all ease-in-out;
-
+  background-color: #ed2327;
+  color: #fff;
+  border: 1px solid #000;;
 }
 input[type='submit']:hover{
-  background-color: #ed2327;
+  background-color: #3195ff;
   color: #fff;
   border: none;
   display: inline-block;

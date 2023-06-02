@@ -1,8 +1,9 @@
 import React from 'react'
 import {default as aboutPic} from '../assets/aboutPic.jpg';
 import {FaPhoneSquareAlt} from 'react-icons/fa';
-// import {FcDownload } from 'react-icons/fc';
+import {MdEmail, MdDownloadForOffline } from 'react-icons/md';
 import resume from '../assets/Latest1_Bhargav.D-UI+Developer-Resume.pdf';
+
 
 const About = () => {
   return (
@@ -18,12 +19,16 @@ const About = () => {
               <div  data-aos='fade-up'  data-aos-duration='3000'>
                  <button className="resume_btn_bg"><a className="resume_button"
                      href={resume}
-                     download="Bhargav.D-UI Developer-Resume.pdf">Resume ⬇️</a>
+                     download="Bhargav.D-UI Developer-Resume.pdf">Resume <MdDownloadForOffline className="resume"/></a>
                 </button>
                 <button className="resume_btn_bg"><a className="resume_button"
                      href='tel:+917207115374'
                      >Phone <FaPhoneSquareAlt className='phone'/></a>
-               </button>     
+               </button> 
+               <button className="resume_btn_bg"><a className="resume_button"
+                     href='mailto:techbhargava@gmail.com'
+                     >Email <MdEmail className='email'/></a>
+               </button>      
             </div>
            </div>
       </div>

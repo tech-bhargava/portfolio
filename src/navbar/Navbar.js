@@ -18,6 +18,7 @@ const Navbar = () => {
         }
     },[y])
   return (
+    <>
     <div className="wrapper animate whiteBg" style={y > 110 ? { height: "95px" } : { height: "100px" }}>
             <nav className="nav_links">
                <Link to="home" smooth={true} duration={50}>
@@ -90,6 +91,7 @@ const Navbar = () => {
                 </div>
             </nav>
     </div>
+    </>
   )
 }
 
