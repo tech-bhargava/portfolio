@@ -18,16 +18,15 @@ const Navbar = () => {
         }
     },[y])
   return (
-    <>
     <div className="wrapper animate whiteBg" style={y > 110 ? { height: "95px" } : { height: "100px" }}>
             <nav className="nav_links">
                <Link to="home" smooth={true} duration={50}>
-                <div className="logo_border_red"> 
-                   <div className="logo_container">
-                      <h1 className="parent_logo">D</h1>
-                      <h2 className="child_logo">B</h2>
-                  </div>
-                </div>
+                  <div className="logo_border_red"> 
+                    <div className="logo_container">
+                       <h1 className="parent_logo">D</h1>
+                       <h2 className="child_logo">B</h2>
+                    </div>
+                   </div>
                 </Link>
                 <div className="nav_items">
                 <ul >
@@ -91,7 +90,7 @@ const Navbar = () => {
                 </div>
             </nav>
     </div>
-    </>
+
   )
 }
 

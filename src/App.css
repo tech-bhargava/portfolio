@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html, body{
-  overflow-x: hidden;
+  overflow-y: none;
 }
 [data-aos^=fade][data-aos^=fade].aos-animate{
   padding-left: 0;
@@ -15,6 +15,7 @@ html, body{
   top: 0;
   left: 0;
   z-index: 999;
+
 }
 #about, #skills, #projects, #contact{
   padding-top: 2%;
@@ -35,6 +36,7 @@ html, body{
   background-color: #333;
   /* background-color: #15286e; */
 }
+
 .logo_container {
   position: relative;
   cursor: pointer;
@@ -191,6 +193,7 @@ a{
   align-items: center;
   border-radius: 50%;
 }
+
 .header_pic_bg::after{
   content:'';
   width: 100%;
@@ -436,4 +439,95 @@ input[type='submit']:hover{
   color: #fff;
   border: none;
   display: inline-block;
+}
+/* ********** MOBILE_NAV ********* */
+
+
+/* MEDIA QUERIES */
+@media (min-width: 320px) and (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .logo_border_red{
+    height: 70px;
+    width: 70px;
+  }
+  .logo_container{
+    height: 60px;
+    width: 60px;
+  }
+  .parent_logo{
+    font-size: 40px;
+  }
+  .child_logo{
+    font-size: 32px;
+
+  }
+.sec_01, .sec_02{
+  height: auto;
+  display: block;
+}
+.header_content {
+margin-top: 100px;
+}
+.header_content h1{
+  font-size: 2.5rem;
+  margin-right: 0px;
+}
+.header_pic_bg{
+  height: 320px;
+  width: 320px;
+  margin-bottom: 10px;
+}
+.about_pic_bg{
+  height: 320px;
+  width: 320px;
+  margin: 10px auto;
+}
+.header_pic, .about_pic{
+  height: 300px;
+  width: 300px;
+}
+.sec_02{
+  height: auto;
+  padding: 0% 2%;
+  margin: 0 auto;
+}
+.about_content{
+  width: 100%;
+  margin: 0px auto;
+}
+.about_content h1{
+  display: block;
+  text-align: center;
+}
+.about_content p{
+    padding: 0% 2%;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.about_buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 767px){
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
 }
