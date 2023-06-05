@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="row">
              {projectsData.map((item, id) => (
                <div className="col-12 col-sm-12 col-xl-3 col-lg-3 col-md-2" data-aos="fade-up" data-aos-duration="3000"> 
-                  <div key={id} className="card col-m-auto m-3 mb-3" style={{width: '18rem'}}>
+                  <div key={id} className="card col-m-auto" style={{width: '18rem'}}>
                       <img className="card-img-top" src={item.img} alt={item.title} />
                       <div className='card_body'>
                          <ul className="card_icon">

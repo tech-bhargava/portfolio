@@ -448,6 +448,12 @@ input[type='submit']:hover{
   html, body {
     overflow-x: hidden;
   }
+  .nav_items{
+    display: none;
+  }
+  [data-aos^=fade][data-aos^=fade].aos-animate{
+    padding: 0;
+  }
   .logo_border_red{
     height: 70px;
     width: 70px;
@@ -465,6 +471,7 @@ input[type='submit']:hover{
   }
 .sec_01, .sec_02{
   height: auto;
+  max-height: 1000px;
   display: block;
 }
 .header_content {
@@ -513,7 +520,21 @@ margin-top: 100px;
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
-
+}
+.sec_03{
+  max-height: 550px;
+}
+.card{
+  width: 90% !important;
+  margin: 10px auto;
+}
+.sec_05{
+  display: inline-block;
+  width: 100%;
+  padding: 10px !important;
+}
+textarea{
+  width: 100%;
 }
 }
 @media (min-width: 481px) and (max-width: 767px) {
