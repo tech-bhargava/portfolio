@@ -2,7 +2,7 @@
 
 // const Backdrop = ({toggleSidebar}) => {
 //   return (
-//     <div  className="darkBg" onClick={() => toggleSidebar(false)}>
+//     <div  className="mobile_nav_bg darkBg" onClick={() => toggleSidebar(false)}>
         
 //     </div>
 //   )

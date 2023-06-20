@@ -2,7 +2,7 @@ import React from 'react'
 import {default as aboutPic} from '../assets/aboutPic.jpg';
 import {FaPhoneSquareAlt} from 'react-icons/fa';
 import {MdEmail, MdDownloadForOffline } from 'react-icons/md';
-import resume from '../assets/Latest1_Bhargav.D-UI+Developer-Resume.pdf';
+import resume from '../assets/Bhargav.D-UI Developer-Resume - June.pdf';
 
 
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
           </div>
            <div className="about_content"> 
               <h1>My name is <h1 className="about_name">Bhargava Devarakonda.</h1></h1>
-              <p>I have 1+ years of experience in UI development. Currently, am working as a UI Developer in TWD(The Web Dev). It's located in Bhopal, Madhya Pradesh, India.</p>
+              <p>I have 7 months of experience in UI development. Currently, am working as a UI Developer in TWD(The Web Dev). It's located in Bhopal, Madhya Pradesh, India.</p>
                   <div className="about_buttons" data-aos='fade-up'  data-aos-duration='3000'>
                     <button className="resume_btn_bg"><a className="resume_button"
                         href={resume}

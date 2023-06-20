@@ -2,14 +2,19 @@ import React, { useEffect, useState } from 'react'
 import {Link} from "react-scroll"
 import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css';
-
-
+// import Sidebar from './Sidebar';
+// import Backdrop from './Backdrop';
+import {FiMenu} from 'react-icons/fi';
+import {GrClose} from 'react-icons/gr';
+// import {FaBars} from 'react-icons/fa';
 
 //Assets
 
 
 const Navbar = () => {
     const [y, setY] = useState(window.scrollY);
+    // const [sidebarOpen, toggleSidebar] = useState(false);
+    const [mobile, setMobile] = useState(false);
 
     useEffect(()=>{
         window.addEventListener("scroll", () => setY(window.scrollY));
@@ -18,6 +23,9 @@ const Navbar = () => {
         }
     },[y])
   return (
+    <>
+      {/* <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />} */}
     <div className="wrapper animate whiteBg" style={y > 110 ? { height: "95px" } : { height: "100px" }}>
             <nav className="nav_links">
                <Link to="home" smooth={true} duration={50}>
@@ -28,17 +36,16 @@ const Navbar = () => {
                     </div>
                    </div>
                 </Link>
-                <div className="nav_items">
-                <ul >
+               
+                <ul className={mobile? "mobile_nav_items mn_items" : "nav_items"} onClick={()=>setMobile(false)}>
                     <li>
                         <Link
-                            activeClass="active_item"
+                           activeClass="active_item"
                            to="home"
                            spy={true}
                            smooth={true}
                            offset={-100}
                            duration={50}>
-                            
                         HOME
                         </Link>
                     </li>
@@ -87,10 +94,12 @@ const Navbar = () => {
                         </Link>
                     </li>
                 </ul>
-                </div>
+                <button className="mobile_menu_icon" onClick={()=>{setMobile(!mobile)}}>
+                    {mobile? <GrClose className="close"/> : <FiMenu className="menu"/>}
+                </button>
             </nav>
     </div>
-
+    </>
   )
 }
 
