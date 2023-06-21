@@ -16,6 +16,7 @@ const Navbar = () => {
     // const [sidebarOpen, toggleSidebar] = useState(false);
     const [mobile, setMobile] = useState(false);
 
+
     useEffect(()=>{
         window.addEventListener("scroll", () => setY(window.scrollY));
         return () => {
@@ -37,9 +38,10 @@ const Navbar = () => {
                    </div>
                 </Link>
                
-                <ul className={mobile? "mobile_nav_items mn_items" : "nav_items"} onClick={()=>setMobile(false)}>
+                <ul className={mobile? "mobile_nav_items mn_items" : "nav_items"}  onClick={()=>setMobile(!mobile)}>
                     <li>
                         <Link
+                            onClick={()=>{setMobile(false)}}
                            activeClass="active_item"
                            to="home"
                            spy={true}
@@ -51,7 +53,8 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link
-                            activeClass="active_item"
+                            onClick={()=>{setMobile(false)}}
+                           activeClass="active_item"
                            to="about"
                            spy={true}
                            smooth={true}
@@ -62,6 +65,7 @@ const Navbar = () => {
                     </li>  
                      <li>
                         <Link
+                            onClick={()=>{setMobile(false)}}
                            activeClass="active_item"
                            to="skills"
                            spy={true}
@@ -73,6 +77,7 @@ const Navbar = () => {
                     </li>  
                     <li>
                         <Link
+                            onClick={()=>{setMobile(false)}}
                            activeClass="active_item"
                            to="projects"
                            spy={true}
@@ -84,6 +89,7 @@ const Navbar = () => {
                     </li>  
                      <li className="last-child">
                         <Link
+                           onClick={()=>{setMobile(false)}}
                            activeClass="active_item"
                            to="contact"
                            spy={true}
@@ -94,7 +100,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                 </ul>
-                <button className="mobile_menu_icon" onClick={()=>{setMobile(!mobile)}}>
+                <button className="mobile_menu_icon" onClick={()=>{setMobile(true)}}>
                     {mobile? <GrClose className="close"/> : <FiMenu className="menu"/>}
                 </button>
             </nav>
