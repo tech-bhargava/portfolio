@@ -9,7 +9,7 @@ const Skills = () => {
 
   return (
     <>
-    <div className="sec_03" id="skills">
+    <div className="sec_03" id="skills" ref={Skills}>
     <h1 className="main_heading">SKILLS</h1>
       <div className="skillsContainer"  data-aos="fade-left" data-aos-duration="3000">
                 <div className="skill_scroll">

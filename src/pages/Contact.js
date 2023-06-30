@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <div id="contact" ref={Contact}>
          <h1 className="main_heading">CONTACT</h1>
         <div className="sec_05 container" data-aos='fade-up' data-aos-duration='3000'>
             <div className="row contact-form">

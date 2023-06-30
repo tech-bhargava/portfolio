@@ -6,7 +6,7 @@ import {BsCodeSlash} from 'react-icons/bs';
 
 const Projects = () => {
   return (
-    <div id="projects">
+    <div id="projects" ref={Projects}>
          <h1 className="main_heading">PROJECTS</h1>
     <div className="sec_04">
         <div className="all_cards">
@@ -20,7 +20,11 @@ const Projects = () => {
                             <li className="eye"><a href={item.git} target="_blank" rel="noreferrer"><BsCodeSlash/></a></li>
                             {/* <li className="linkedin"><a href="https://www.linkedin.com/in/bhargava-devarakonda-8b5332232/" target="_blank" rel="noreferrer">< FaLinkedin/></a></li> */}
                          </ul>
-                         <h3 className="project_name">{item.title}</h3>
+                         <div>
+                           <h3 className="project_name">{item.title}</h3>
+                           <h5 className="project">{item.cause}</h5>
+                         </div>
+                       
                       </div>
                      
                   </div>

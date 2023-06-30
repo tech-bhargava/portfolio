@@ -31,13 +31,14 @@ export const projectsData = [
     },
     {
         id : 5,
-        title : 'Projectname',
-        img : '/projects/twd.png'
+        title : 'AI-Image-Generator',
+        img : '/projects/ai-image-generator.png'
     },
     {
         id : 6,
-        title : 'Projectname',
-        img : '/projects/twd.png'
+        title : 'TailwindBuddy',
+        cause : 'Site under construction',
+        img : '/projects/tailwindbuddy.png'
     },
     {
         id : 7,

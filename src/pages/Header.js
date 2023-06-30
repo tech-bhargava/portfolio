@@ -6,7 +6,7 @@ const Home = () => {
    // const heading = "<I'm a Web Developer/>";
 
   return (
-    <div className="sec_01" id="home">
+    <div className="sec_01" id="home" ref={Home}>
        <div className="header_content">
            <h1>Hi👋<br/>I'm a <h1 className="ui_developer_text">UI Developer.</h1></h1>  
            <ul className="react_icons pl-0" data-aos="fade-right" data-aos-duration='3000'>
