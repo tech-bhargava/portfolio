@@ -118,7 +118,7 @@ a{
   font-weight: bold;
 }
 .sec_01{
-  height: 650px;
+  height: 700px;
   padding: 0% 6%;
   display: flex;
   justify-content: center;
@@ -207,7 +207,7 @@ a{
 /* ABOUT */
 
 .sec_02{
-  height: 530px;
+  height: 500px;
   padding: 0% 6%;
    display: flex;
    justify-content: center;
