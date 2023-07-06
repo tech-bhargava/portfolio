@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body{
+/* html, body{
   overflow-y: none;
-}
+} */
 [data-aos^=fade][data-aos^=fade].aos-animate{
   padding-left: 0;
 }
@@ -17,7 +17,8 @@ html, body{
   z-index: 999;
 
 }
-#about, #skills, #projects, #contact{
+
+#home, #about, #skills, #projects, #contact{
   padding-top: 2%;
 }
 .animate {
@@ -206,7 +207,7 @@ a{
 /* ABOUT */
 
 .sec_02{
-  height: 500px;
+  height: 530px;
   padding: 0% 6%;
    display: flex;
    justify-content: center;
@@ -485,6 +486,14 @@ input[type='submit']:hover{
 }
 .mobile_nav_items{
   display: none;
+}
+.notfound_page {
+  height: 500px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ********** MOBILE_NAV ********* */

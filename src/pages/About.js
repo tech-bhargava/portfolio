@@ -7,7 +7,7 @@ import resume from '../assets/Bhargav.D-UI Developer-Resume - June.pdf';
 
 const About = () => {
   return (
-   <div id="about" ref={About}> 
+   <div id="about"> 
        <h1 className="main_heading">ABOUT</h1>   
     <div className="sec_02" data-aos='fade-up' data-aos-duration='3000'>
           <div className="about_pic_bg">

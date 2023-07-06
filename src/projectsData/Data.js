@@ -36,7 +36,7 @@ export const projectsData = [
     },
     {
         id : 6,
-        title : 'TailwindBuddy',
+        // title : 'TailwindBuddy',
         cause : 'Site under construction',
         img : '/projects/tailwindbuddy.png'
     },
